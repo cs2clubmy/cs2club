@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> CS2 ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rstyle.css">
+    <link rel="stylesheet" href="footstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <section class="top-gif">
+        <div class="top-content">
+            <a href="#whole-ranking-page" class="explore">Explore Rank & Matches ↓</a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="whole-ranking-page" id="whole-ranking-page">
+        <h1 class="rankingHeader">CS2 World Ranking & Match Results</h1>
+        <hr class="line">
+        <div class="description-row">
+            <img src="image/cases.gif" class="casesgif">
+            <h4 class="rankingHeader">Live view of World Ranking & Matches result. Explore it and support your team
+                now!!</h4>
+            <img src="image/cases.gif" class="casesgif">
+        </div>
+        <hr class="line">
+        <br>
+        <br>
+        <br>
+        <div class="podium">
+            <div class="podium-spot" id="rank-2"></div>
+            <div class="podium-spot" id="rank-1"></div>
+            <div class="podium-spot" id="rank-3"></div>
+        </div>
+        <div class="ranking-page-layout">
+            <div class="schedule-column">
+                <h2 class="match-header">Latest Matches :</h2>
+                <input type="text" id="match-search" class="match-search" placeholder="Other matches by team name...">
+                <u1 class="match-schedule" id="match-schedule"></u1>
+            </div>
+            <div class="ranking-column">
+                <h2 class="ranking-header"> More Rankings :</h2>
+                <ul class="other-teams" id="other-teams"></ul>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+
+</html>
+
+<script>
+    fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            // Now that the navbar exists in the DOM, grab its elements
+            const menuToggle = document.getElementById('menu-toggle');
+            const navmenu = document.getElementById('menu');
+            const closebutton = document.getElementById('close-button');
+            const overlay = document.getElementById('overlay');
+
+            menuToggle.addEventListener('click', () => {
+                menu.classList.add('active');
+                overlay.classList.add('active');
+            });
+
+            closebutton.addEventListener('click', () => {
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            overlay.addEventListener('click', () => {
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        })
+
+    $.getJSON('teamranking.json', function (data) {
+        const rankings = data.teamrankings;
+
+        // First 3 podium
+        $('#rank-1').html(buildTeamCard(rankings[0]));
+        $('#rank-2').html(buildTeamCard(rankings[1]));
+        $('#rank-3').html(buildTeamCard(rankings[2]));
+
+        // Rest of Rankings till Rank 15
+        const list = $('#other-teams');
+        for (let i = 3; i < 15; i++) {
+            list.append(`<li class="rank-list-item">${buildTeamCard(rankings[i])}</li>`);
+        }
+    }).fail(function (err) {
+        console.error('Failed to load rankings:', err);
+    });
+
+    let allMatches = [];
+
+    fetch('match.json')
+        .then(res => res.json())
+        .then(matches => {
+            allMatches = matches; // save everything for searching later
+            renderMatches(allMatches.slice(0, 5)); // show latest 5 by default
+        })
+        .catch(err => console.error('Failed to load matches:', err));
+
+    function renderMatches(matchList) {
+        const list = document.getElementById('match-schedule');
+        list.innerHTML = ''; // clear previous rows before re-rendering
+
+        matchList.forEach(match => {
+            const li = document.createElement('li');
+            li.className = 'match-row';
+            li.innerHTML = buildMatchCard(match);
+            list.appendChild(li);
+        });
+    }
+
+    document.getElementById('match-schedule').addEventListener('click', (e) => {
+        const hoverArea = e.target.closest('.match-hover-area');
+        if (!hoverArea) return;
+
+        const row = hoverArea.closest('.match-row');
+        row.classList.toggle('active');
+    });
+
+    document.getElementById('match-search').addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+
+        if (query === '') {
+            renderMatches(allMatches.slice(0, 5)); // empty search → back to latest 5
+            return;
+        }
+
+        const filtered = allMatches.filter(match =>
+            match.team1.name.toLowerCase().includes(query) ||
+            match.team2.name.toLowerCase().includes(query) ||
+            match.event.toLowerCase().includes(query)
+        );
+
+        renderMatches(filtered);
+    })
+
+    /*footer*/
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(err => console.error('Failed to load footer:', err));
+
+    function buildTeamCard(team) {
+        const changeText = team.points_diff > 0 ? `+${team.points_diff}` : team.points_diff;
+        const crownHTML = team.rank === 1 ? `<img src = "image/crown.gif" class="crown" alt="crown">` : '';
+        const logoName = team.name.toLowerCase();
+        const logoImg = `<img src = "image/${logoName}.png" alt="${team.name}" onerror="this.onerror=null; this.src='image/${logoName}.jpg';">`
+        return `
+            ${crownHTML}
+            <div class = "team-hover-area">
+                <div class="logo-wrap">${logoImg}</div>
+                <img src = "image/ranktrophy.gif" class = "ranktrophy" alt="ranktrophy">
+                <div>${team.rank}</div>
+                <div>${team.name}</div>
+            </div>
+            <div class="team-details">
+                <div>Points: ${team.points} pts</div>
+                <div>Changes: ${changeText}</div>
+            </div>
+        `;
+    }
+
+    function buildMatchCard(match) {
+        const mapsHTML = match.maps.map(map => `
+            <div class = "match-map-row">
+                <span>${map.name}</span>
+                <span>${map.team1_score} : ${map.team2_score}</span>
+            </div>
+        `).join('');
+
+        return `
+            <div class="match-hover-area">
+                <div class="match-team match-team-left">${match.team1.name}</div>
+                <div class="match-score">${match.team1.score} : ${match.team2.score}</div>
+                <div class="match-team match-team-right">${match.team2.name}</div>
+            </div>
+            <div class="match-details">
+                <div class="match-details-event">${match.event}</div>
+                <div class="match-details-date">${match.date}</div>
+                <div class="match-maps">${mapsHTML}</div>
+                <div class="match-winner">Winner: ${match.winner.name}</div>
+            </div>
+        `
+    }
+</script>

@@ -1,0 +1,368 @@
+[
+  {
+    "id": 2396584,
+    "team1": {
+      "id": 4494,
+      "name": "MOUZ",
+      "score": 1,
+      "rank": 4
+    },
+    "team2": {
+      "id": 13286,
+      "name": "FUT",
+      "score": 2,
+      "rank": 10
+    },
+    "maps": [
+      {
+        "id": 5,
+        "name": "Nuke",
+        "team1_score": 16,
+        "team2_score": 12
+      },
+      {
+        "id": 6,
+        "name": "Mirage",
+        "team1_score": 11,
+        "team2_score": 13
+      },
+      {
+        "id": 3,
+        "name": "Ancient",
+        "team1_score": 6,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 13286,
+      "name": "FUT"
+    }
+  },
+  {
+    "id": 2396583,
+    "team1": {
+      "id": 9565,
+      "name": "Vitality",
+      "score": 1,
+      "rank": 5
+    },
+    "team2": {
+      "id": 11241,
+      "name": "B8",
+      "score": 2,
+      "rank": 16
+    },
+    "maps": [
+      {
+        "id": 6,
+        "name": "Mirage",
+        "team1_score": 16,
+        "team2_score": 12
+      },
+      {
+        "id": 4,
+        "name": "Dust2",
+        "team1_score": 4,
+        "team2_score": 13
+      },
+      {
+        "id": 7,
+        "name": "Inferno",
+        "team1_score": 11,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 11241,
+      "name": "B8"
+    }
+  },
+  {
+    "id": 2396582,
+    "team1": {
+      "id": 12394,
+      "name": "BetBoom",
+      "score": 0,
+      "rank": 12
+    },
+    "team2": {
+      "id": 4411,
+      "name": "Ninjas in Pyjamas",
+      "score": 2,
+      "rank": 25
+    },
+    "maps": [
+      {
+        "id": 5,
+        "name": "Nuke",
+        "team1_score": 3,
+        "team2_score": 13
+      },
+      {
+        "id": 1,
+        "name": "Anubis",
+        "team1_score": 11,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 4411,
+      "name": "Ninjas in Pyjamas"
+    }
+  },
+  {
+    "id": 2396585,
+    "team1": {
+      "id": 12467,
+      "name": "PARIVISION",
+      "score": 2,
+      "rank": 12
+    },
+    "team2": {
+      "id": 8474,
+      "name": "100 Thieves",
+      "score": 0,
+      "rank": 32
+    },
+    "maps": [
+      {
+        "id": 1,
+        "name": "Anubis",
+        "team1_score": 13,
+        "team2_score": 5
+      },
+      {
+        "id": 4,
+        "name": "Dust2",
+        "team1_score": 13,
+        "team2_score": 5
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 12467,
+      "name": "PARIVISION"
+    }
+  },
+  {
+    "id": 2396581,
+    "team1": {
+      "id": 9215,
+      "name": "MIBR",
+      "score": 2,
+      "rank": 17
+    },
+    "team2": {
+      "id": 12895,
+      "name": "K27",
+      "score": 0,
+      "rank": 34
+    },
+    "maps": [
+      {
+        "id": 5,
+        "name": "Nuke",
+        "team1_score": 13,
+        "team2_score": 5
+      }
+    ],
+    "best_of": 1,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 9215,
+      "name": "MIBR"
+    }
+  },
+  {
+    "id": 2396586,
+    "team1": {
+      "id": 4863,
+      "name": "TYLOO",
+      "score": 0,
+      "rank": 23
+    },
+    "team2": {
+      "id": 8840,
+      "name": "Lynn Vision",
+      "score": 2,
+      "rank": 27
+    },
+    "maps": [
+      {
+        "id": 7,
+        "name": "Inferno",
+        "team1_score": 4,
+        "team2_score": 13
+      },
+      {
+        "id": 5,
+        "name": "Nuke",
+        "team1_score": 8,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 8840,
+      "name": "Lynn Vision"
+    }
+  },
+  {
+    "id": 2396822,
+    "team1": {
+      "id": 10503,
+      "name": "OG",
+      "score": 0,
+      "rank": 81
+    },
+    "team2": {
+      "id": 11699,
+      "name": "BAKS",
+      "score": 2,
+      "rank": 89
+    },
+    "maps": [
+      {
+        "id": 7,
+        "name": "Inferno",
+        "team1_score": 11,
+        "team2_score": 13
+      },
+      {
+        "id": 6,
+        "name": "Mirage",
+        "team1_score": 6,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "ESL Challenger League Season 52 Europe Cup 3",
+    "winner": {
+      "id": 11699,
+      "name": "BAKS"
+    }
+  },
+  {
+    "id": 2396818,
+    "team1": {
+      "id": 13181,
+      "name": "BASEMENT BOYS",
+      "score": 0,
+      "rank": 86
+    },
+    "team2": {
+      "id": 12609,
+      "name": "Lavked",
+      "score": 2,
+      "rank": 96
+    },
+    "maps": [
+      {
+        "id": 4,
+        "name": "Dust2",
+        "team1_score": 3,
+        "team2_score": 13
+      },
+      {
+        "id": 3,
+        "name": "Ancient",
+        "team1_score": 10,
+        "team2_score": 13
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-14",
+    "event": "ESL Challenger League Season 52 Europe Cup 3",
+    "winner": {
+      "id": 12609,
+      "name": "Lavked"
+    }
+  },
+  {
+    "id": 2396577,
+    "team1": {
+      "id": 7020,
+      "name": "Spirit",
+      "score": 2,
+      "rank": 1
+    },
+    "team2": {
+      "id": 6290,
+      "name": "Luminosity",
+      "score": 0,
+      "rank": 33
+    },
+    "maps": [
+      {
+        "id": 4,
+        "name": "Dust2",
+        "team1_score": 19,
+        "team2_score": 15
+      },
+      {
+        "id": 3,
+        "name": "Ancient",
+        "team1_score": 13,
+        "team2_score": 3
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-13",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 7020,
+      "name": "Spirit"
+    }
+  },
+  {
+    "id": 2396579,
+    "team1": {
+      "id": 11283,
+      "name": "Falcons",
+      "score": 2,
+      "rank": 2
+    },
+    "team2": {
+      "id": 6665,
+      "name": "Astralis",
+      "score": 0,
+      "rank": 20
+    },
+    "maps": [
+      {
+        "id": 4,
+        "name": "Dust2",
+        "team1_score": 13,
+        "team2_score": 11
+      },
+      {
+        "id": 3,
+        "name": "Ancient",
+        "team1_score": 13,
+        "team2_score": 7
+      }
+    ],
+    "best_of": 3,
+    "date": "2026-08-13",
+    "event": "Esports World Cup 2026",
+    "winner": {
+      "id": 11283,
+      "name": "Falcons"
+    }
+  }
+]

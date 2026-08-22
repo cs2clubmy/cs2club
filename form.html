@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> CS Club Member Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "formhead-box">
+            <img id = "formhead-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXtbn14aisvzyOuZAPNgeu2HU2IdGQaerV6fzJZ0UPQalKMZrt_QMudJDe_3GDQyj_CV0&s=10" alt="icon" style = "width: 64px; height: 64px;">
+            <span>CS2 Club</span>
+        </div>
+        <form action = "response.html" method = "get">
+            <div class= "formcontent">
+                <div class = "formstu_name">
+                    <p>
+                        <label id = "stu_namelabel" for = "stu_name">Student Name</label>
+                        <br>
+                        <input type = "text" id = "stu_nameinput" name = "stu_name" placeholder = "NAME AS SHOWN IN ID" required>
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class = "formstu_id">
+                    <p>
+                        <label id = "stu_idlabel" for = "stu_id">Student ID</label>
+                        <br>
+                        <input type = "text" id = "stu_idinput" name = "stu_id" placeholder = "ex. 25*****" required maxlength="7">
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class = "formstu_phone">
+                    <p>
+                        <label id = "stu_phonelabel" for = "stu_phone">Student Phone (Optional)</label>
+                        <br>
+                        <input type = "text" id = "stu_phoneinput" name = "stu_phone" placeholder = "ONLY NUMBERS" maxlength="11">
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class = "formstu_email">
+                    <p>
+                        <label id = "stu_emaillabel" for = "stu_email">Student Email</label>
+                        <br>
+                        <input type = "text" id = "stu_emailinput" name = "stu_email" value = "@gmail.com" required>
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class = "formexp">
+                    <p id = "formexptitle">
+                        Have You Played / Interacted With CS (Counter-Strike) Before?
+                    </p>
+                    <div class = "yesnobox">
+                        <p>
+                            <input type = "radio" id = "yes" name = "exp" value = "yes">
+                            <br>
+                            <label id = "yes" for = "yes">Yes</label>
+                        </p>
+                        <br>
+                        <p>
+                            <input type = "radio" id = "no" name = "exp" value = "no">
+                            <br>
+                            <label id = "no" for = "no">No</label>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class = "formreason">
+                    <p>
+                        <label id = "reasonlabel" for = "reason">Why Do You Want To Join The CS Club?</label>
+                        <br>
+                        <input type = "text" id = "reasoninput" name = "reason" placeholder = "Briefly Describe (not more than 1000 words)" required maxlength="1000">
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class = "submitreset">
+                    <input id = "submit" type = "submit" value = "Submit Form">
+                    <input id = "reset" type = "reset" value = "Reset Form" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                </div>
+                <br>
+                <br>
+            </div>
+        </form>
+        <script>
+            //local html listener and functions
+            window.onscroll = function() { 
+                scrollFunction() 
+            };
+
+            function scrollFunction() {
+                const header = document.querySelector(".formhead-box");
+                
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    header.classList.add("small");
+                } else {
+                    header.classList.remove("small");
+                }
+            }
+
+            const emailInput = document.getElementById("stu_emailinput");
+
+            emailInput.addEventListener("focus", function() {
+                setTimeout(() => { this.setSelectionRange(0, 0); }, 1);
+            });
+
+            emailInput.addEventListener("input", function() {
+                if (!this.value.endsWith("@gmail.com")) {
+                    const start = this.value.split("@")[0];
+                    this.value = start + "@gmail.com";
+                    this.setSelectionRange(start.length, start.length);
+                }
+            });
+
+            document.querySelector('form').addEventListener('reset', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            //local session storage
+            const form = document.querySelector('form');
+
+            document.querySelectorAll('input').forEach(input => {
+                if (input.type === 'radio') {
+                    if (sessionStorage.getItem(input.name) === input.value) input.checked = true;
+                } else if (input.id) {
+                    const saved = sessionStorage.getItem(input.id);
+                    if (saved) input.value = saved;
+                }
+            });
+
+            form.addEventListener('input', () => {
+                document.querySelectorAll('input').forEach(input => {
+                    if (input.type === 'radio' && input.checked) {
+                        sessionStorage.setItem(input.name, input.value);
+                    } else if (input.id && input.type !== 'submit' && input.type !== 'reset') {
+                        sessionStorage.setItem(input.id, input.value);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

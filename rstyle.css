@@ -1,0 +1,371 @@
+.rankingHeader {
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    color: #dfdedcec;
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.podium-spot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    width: 270px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.rank-list-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #0b1727;
+    border-radius: 15px;
+    padding: 6px 6px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+#rank-1 {
+    min-height: 220px;
+    order: 2;
+    background: linear-gradient(180deg, #ffc814, #ffd95e);
+    color: #ffffff;
+    text-align: center;
+}
+
+#rank-2 {
+    min-height: 150px;
+    order: 1;
+    background: linear-gradient(180deg, #999595, #d6d2d2);
+    color: #ffffff;
+    text-align: center;
+}
+
+#rank-3 {
+    min-height: 110px;
+    order: 3;
+    background: linear-gradient(180deg, #b17741, #e0af81);
+    color: #ffffff;
+    text-align: center;
+}
+
+.other-teams {
+    width: 90%;
+    max-height: 440px;
+    border-radius: 8px;
+    padding: 0 8px 8px 8px;
+    text-align: center;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.crown {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -80px;
+}
+
+.team-details {
+    opacity: 1;
+    max-height: 280px;
+    margin-top: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.team-hover-area {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.logo-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff129;
+}
+
+.logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    display: block;
+    position: relative;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.ranktrophy {
+    width: 20px;
+    height: 20px;
+}
+
+.detail-rank {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.detail-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ranking-header {
+    color: #999595;
+    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.match-schedule {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.match-row {
+    background-color: #0b1727;
+    border-radius: 12px;
+}
+
+.match-hover-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.match-team {
+    flex: 1;
+    font-weight: bold;
+}
+
+.match-team-left {
+    text-align: left;
+}
+
+.match-team-right {
+    text-align: right;
+}
+
+.match-score {
+    flex: 0 0 auto;
+    padding: 0 20px;
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.match-details {
+    position: static;
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0;
+    padding: 0 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: center;
+}
+
+.match-row.active .match-details {
+    opacity: 1;
+    max-height: 400px;
+    margin-top: 10px;
+    padding: 0 16px 16px 16px;
+}
+
+.match-details-event {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.match-maps {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 8px 0;
+}
+
+.match-map-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    background: #041225;
+    border-radius: 6px;
+}
+
+.match-winner {
+    font-weight: bold;
+}
+
+.match-header {
+    color: #999595;
+    font-size: 1.4rem;
+    margin: 0 0 12px 0;
+    text-align: left;
+}
+
+.ranking-page-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
+.schedule-column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.ranking-column {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+html:has(.whole-ranking-page) {
+    scroll-behavior: smooth;
+}
+
+.other-teams::-webkit-scrollbar {
+    width: 10px;
+}
+
+.other-teams::-webkit-scrollbar-track {
+    background: #0b1727;
+    border-radius: 12px;
+}
+
+.other-teams::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 12px;
+}
+
+.other-teams {
+    scrollbar-color: #FFD700 #0b1727;
+    scrollbar-width: thin;
+}
+
+.match-search {
+    width: 90%;
+    padding: 14px 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+    background: #0b1727;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.match-search::placeholder {
+    color: #7c8792;
+}
+
+.match-search:focus {
+    outline: none;
+    box-shadow: 0 0 8px #FFD700;
+}
+
+.description-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.casesgif {
+    width: 50px;
+    height: 50px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .team-details {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+    }
+
+    .rank-list-item:hover .team-details,
+    .podium-spot:hover .team-details {
+        opacity: 1;
+        max-height: 280px;
+        margin-top: 12px;
+    }
+
+    .match-details {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0;
+        max-height: none;
+        pointer-events: none;
+        transition: 0.25s;
+        z-index: 2000;
+
+        background: #142944;
+        border: 2px solid #FFD700;
+        border-radius: 15px;
+        padding: 30px 40px;
+        min-width: 300px;
+        margin-top: 0;
+    }
+
+    .match-hover-area:hover+.match-details {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ranking-page-layout {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .schedule-column,
+    .ranking-column {
+        width: 100%;
+    }
+}

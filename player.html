@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>
+    <title>Players</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="whole-player-page">
+    <div id="navbar"></div>
+
+    <section class="top-gif">
+        <div class="top-content">
+            <a href="#spirit" class="explore">Explore Players ↓</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h1 id="team-count"></h1>
+            <p>👥Teams</p>
+        </div>
+    
+        <div class="stat">
+            <h1 id="player-count"></h1>
+            <p>🎮Players</p>
+        </div>
+    
+        <div class="stat">
+            <h1>Team Falcons</h1>
+            <p>🏆Last Major Winner (IEM Cologne Major 2026)</p>
+        </div>
+    
+        <div class="stat">
+            <h1>m0NESY</h1>
+            <p>🏅Last Major Winner MVP</p>
+        </div>
+    </section>
+
+    <hr class="line">
+
+    
+    <section class="desc">
+        <h1>Meet the Players</h1>
+        <p>Explore professional CS2 players, discover their roles, nationalities, statistics, and competitive achievements.</p>
+    </section>
+    
+    <hr class="line">
+
+    <section class="spirit" id="spirit">
+        <div class="topmedia">
+            <img src="image/spirit.png" alt="spirit image" class="teamlogo">
+
+            <iframe 
+                src="https://www.youtube.com/embed/Dc6v9Bzxqd0?autoplay=1&mute=1&loop=1&playlist=Dc6v9Bzxqd0"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team spirit</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+    <hr class="line">
+
+    <section class="falcon" id="falcon">
+        <div class="topmedia">
+            <img src="https://cdn.escharts.com/uploads/public/642/ea2/bd4/642ea2bd4d23b843191524.png" alt="falcon image" class="teamlogo">
+        
+            <iframe 
+                src="https://www.youtube.com/embed/WtDyLZRgOFs?autoplay=1&mute=1&loop=1&playlist=WtDyLZRgOFs"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team falcon</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+    <hr class="line">
+
+    <section class="furia" id="furia">
+        <div class="topmedia">
+            <img src="image/furia.png" alt="furia image" class="teamlogo">
+        
+            <iframe 
+                src="https://www.youtube.com/embed/5hmYH7L7FW0?autoplay=1&mute=1&loop=1&playlist=5hmYH7L7FW0"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team furia</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+    <hr class="line">
+
+    <section class="vitality" id="vitality">
+        <div class="topmedia">
+            <img src="image/vitality.png" alt="vitality image" class="teamlogo">
+        
+            <iframe 
+                src="https://www.youtube.com/embed/uW3XI79Ylmc?autoplay=1&mute=1&loop=1&playlist=uW3XI79Ylmc"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team vitality</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+    <hr class="line">
+
+    <section class="mouz" id="mouz">
+        <div class="topmedia">
+            <img src="image/mouz.jpg" alt="mouz image" class="teamlogo">
+        
+            <iframe 
+                src="https://www.youtube.com/embed/UBV-kQNUeFQ?autoplay=1&mute=1&loop=1&playlist=UBV-kQNUeFQ"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team mouz</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+    <hr class="line">
+
+    <section class="9z" id="9z">
+        <div class="topmedia">
+            <img src="image/9z.png" alt="9z image" class="teamlogo">
+        
+            <iframe 
+                src="https://www.youtube.com/embed/k3jd13MU2uU?autoplay=1&mute=1&loop=1&playlist=k3jd13MU2uU"
+                title="Team Intro Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <h1>Team 9z</h1>
+        <div class="playerteambox"></div>
+        <div class="playerbox"></div>
+    </section>
+
+
+<!--script to fetch navbar.html into div + event listen for menu(if using mobile)-->
+<!--Copy and paste the whole <script></script> + add "<div id="navbar"></div>" + both <link> in head will do -->
+<script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById('navbar').innerHTML = data;
+//fetch from navbar and add into div
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navmenu = document.getElementById('menu');
+        const closebutton = document.getElementById('close-button');
+        const overlay = document.getElementById('overlay');
+        const counter = document.querySelectorAll('.teamlogo');
+
+        document.getElementById('team-count').innerHTML =counter.length;
+        document.getElementById('player-count').innerHTML = counter.length*5;
+
+        const openbar = () => {
+            navmenu.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        const closebar = () => {
+            navmenu.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+//add listener for menu button / close button / press empty area to exit menu (overlay)        
+        menuToggle.addEventListener('click', openbar);
+        closebutton.addEventListener('click' ,closebar);
+        overlay.addEventListener('click' , closebar);
+    });
+
+
+//fetch api from json then put into every teams as player
+    fetch('player.json').then(response => response.json()).then(data =>{
+        
+        data.team.forEach(team => {
+            const teamid = document.getElementById(team.id);
+
+            if (teamid){
+                const teamcontainer = teamid.querySelector('.playerteambox');
+                const playercontainer = teamid.querySelector('.playerbox');
+
+                const teamputhtml = `
+                    <div class="teamtop">
+                        <p><strong>Coach: </strong> ${team.coach}</p>
+                        <p><strong>Founded: </strong> ${team.founded}</p>
+                        <p><strong>Win Rate: </strong> ${team["Win Rate"]}</p>
+                    </div>
+                `;
+                teamcontainer.innerHTML = teamputhtml;
+
+                team.players.forEach(player =>{
+                    const playerputhtml = `
+                        <div class="playercard">
+                            <div>
+                                <img src="${player.image}" alt="${player.gamename}">
+                            </div>
+                        
+                            <div class="playersmall">
+                                <h1>${player.gamename}</h1>
+                                <p class="role"><strong>${player.role}</strong></p>
+                                <p class="rating"><strong>Rating: </strong> ${player.rating}</p>
+                            </div>
+                        
+                            <div class="playerbig">
+                                <p><strong>Name: </strong>${player.fullname}</p>
+                                <p><strong>Country: </strong>${player.country}</p>
+                                <p><strong>Age: </strong>${player.age}</p>
+                                <p><strong>HS %: </strong>${player.headshot}</p>
+                                <p><strong>Sensitivity: ${player.sens}</strong> @ <strong>${player.DPI}</strong> DPI </p>
+                            </div>
+                        </div>
+                        
+                    `;                        
+                playercontainer.innerHTML += playerputhtml;
+                })
+            }
+        });
+
+//Because the #falcon... from team.html are loaded instantly, when player havent append in, page will scroll wrongly(default team.. location), so use this to scroll again when the player are appended (This part is references from google appendix:https://github.com/redwoodjs/sdk/issues/1255 + a little modify)
+        if (window.location.hash) {
+            const targetId = window.location.hash.substring(1); 
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
+        fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(err => console.error('Failed to load footer:', err));
+
+    });
+</script>
+<div id="footer"></div>
+</body>
+
+

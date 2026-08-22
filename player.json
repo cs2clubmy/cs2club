@@ -1,0 +1,448 @@
+{
+    "team":[
+        {
+            "id":"spirit",
+            "name":"Team spirit",
+            "coach":"hally",
+            "founded":2015,
+            "Win Rate":"74%",
+            "players":[
+                {
+                    "gamename":"donk",
+                    "fullname":"Danil Kryshkovets",
+                    "role":"Entry",
+                    "country":"Russia",
+                    "age":19,
+                    "rating":1.32,
+                    "headshot":"61%",
+                    "sens":1.25,
+                    "DPI":800,
+                    "image":"image/donk.webp"
+                },
+
+                {
+                    "gamename":"sh1ro",
+                    "fullname":"Dmitry Sokolov",
+                    "role":"AWPer",
+                    "country":"Russia",
+                    "age":25,
+                    "rating":1.22,
+                    "headshot":"30%",
+                    "sens":1.0,
+                    "DPI":800,
+                    "image":"image/sh1ro.webp"
+                },
+
+                {
+                    "gamename":"magixx",
+                    "fullname":"Boris Vorobyev",
+                    "role":"Leader",
+                    "country":"Russia",
+                    "age":23,
+                    "rating":1.05,
+                    "headshot":"51.5%",
+                    "sens":1.5,
+                    "DPI":800,
+                    "image":"image/magixx.webp"
+                },
+
+                {
+                    "gamename":"zont1x",
+                    "fullname":"Myroslav Plakhotia",
+                    "role":"Lurker",
+                    "country":"Ukraine",
+                    "age":21,
+                    "rating":1.10,
+                    "headshot":"53%",
+                    "sens":1.0,
+                    "DPI":800,
+                    "image":"image/zont1x.png"
+                },
+
+                {
+                    "gamename":"tN1R",
+                    "fullname":"Andrey Tatarinovich",
+                    "role":"Rifler",
+                    "country":"Belarus",
+                    "age":25,
+                    "rating":1.08,
+                    "headshot":"50%",
+                    "sens":1.0,
+                    "DPI":400,
+                    "image":"image/tn1r.webp"
+                }
+            ]
+        },
+
+        {
+            "id":"falcon",
+            "name":"Team falcon",
+            "coach":"zonic",
+            "founded":2017,
+            "Win Rate":"68%",
+            "players":[
+                {
+                    "gamename":"m0NESY",
+                    "fullname":"Ilya Osipov",
+                    "role":"AWPer",
+                    "country":"Russia",
+                    "age":21,
+                    "rating":1.28,
+                    "headshot":"38%",
+                    "sens":2.3,
+                    "DPI":400,
+                    "image":"image/m0nesy.webp"
+                },
+
+                {
+                    "gamename":"NiKo",
+                    "fullname":"Nikola Kovac",
+                    "role":"Rifler",
+                    "country":"Bosnia and Herzegovina",
+                    "age":29,
+                    "rating":1.18,
+                    "headshot":"51.3%",
+                    "sens":0.9,
+                    "DPI":800,
+                    "image":"image/niko.webp"
+                },
+
+                {
+                    "gamename":"karrigan",
+                    "fullname":"Finn Andersen",
+                    "role":"Leader",
+                    "country":"Denmark",
+                    "age":36,
+                    "rating":0.94,
+                    "headshot":"40%",
+                    "sens":0.8,
+                    "DPI":800,
+                    "image":"image/karrigan.jpeg"
+                },
+
+                {
+                    "gamename":"TeSeS",
+                    "fullname":"Rene Madsen",
+                    "role":"Rifler",
+                    "country":"Denmark",
+                    "age":25,
+                    "rating":1.07,
+                    "headshot":"52%",
+                    "sens":1.25,
+                    "DPI":800,
+                    "image":"image/teses.png"
+                },
+
+                {
+                    "gamename":"kyousuke",
+                    "fullname":"Maksim Lukin",
+                    "role":"Entry",
+                    "country":"Russia",
+                    "age":19,
+                    "rating":1.12,
+                    "headshot":"54%",
+                    "sens":1.28,
+                    "DPI":800,
+                    "image":"image/kyousuke.jpeg"
+                }
+            ]
+        },
+
+        {
+            "id": "furia",
+            "name": "Team furia",
+            "coach": "sidde",
+            "founded": 2017,
+            "Win Rate": "62%",
+            "players": [
+                {
+                    "gamename": "FalleN",
+                    "fullname": "Gabriel Toledo",
+                    "role": "AWPer",
+                    "country": "Brazil",
+                    "age": 35,
+                    "rating": 1.02,
+                    "headshot": "28%",
+                    "sens": 1.4,
+                    "DPI": 400,
+                    "image":"image/fallen.webp"
+                },
+
+                {
+                    "gamename": "KSCERATO",
+                    "fullname": "Kaike Cerato",
+                    "role": "Rifler",
+                    "country": "Brazil",
+                    "age": 26,
+                    "rating": 1.19,
+                    "headshot": "42%",
+                    "sens": 1.25,
+                    "DPI": 400,
+                    "image":"image/kscerato.webp"
+                },
+
+                {
+                    "gamename": "yuurih",
+                    "fullname": "Yuri Santos",
+                    "role": "Rifler",
+                    "country": "Brazil",
+                    "age": 26,
+                    "rating": 1.11,
+                    "headshot": "48%",
+                    "sens": 2.0,
+                    "DPI": 400,
+                    "image":"image/yuurih.webp"
+                },
+
+                {
+                    "gamename": "YEKINDAR",
+                    "fullname": "Mareks Gaļinskis",
+                    "role": "Entry",
+                    "country": "Latvia",
+                    "age": 26,
+                    "rating": 1.08,
+                    "headshot": "58%",
+                    "sens": 1.0,
+                    "DPI": 800,
+                    "image":"image/yekindar.webp"
+                },
+        
+                {
+                    "gamename": "molodoy",
+                    "fullname": "Daniil Shcherbakov",
+                    "role": "Lurker",
+                    "country": "Kazakhstan",
+                    "age": 21,
+                    "rating": 1.06,
+                    "headshot": "51%",
+                    "sens": 1.1,
+                    "DPI": 800,
+                    "image":"image/molodoy.webp"
+                }
+            ]  
+        },
+
+        {
+            "id": "vitality",
+            "name": "Team vitality",
+            "coach": "XTQZZZ",
+            "founded": 2018,
+            "Win Rate": "71%",
+            "players": [
+                {
+                    "gamename": "ZywOo",
+                    "fullname": "Mathieu Herbaut",
+                    "role": "AWPer",
+                    "country": "France",
+                    "age": 25,
+                    "rating": 1.31,
+                    "headshot": "41%",
+                    "sens": 2.0,
+                    "DPI": 400,
+                    "image":"image/zywoo.webp"
+                },  
+                
+                {
+                    "gamename": "apEX",
+                    "fullname": "Dan Madesclaire",
+                    "role": "Leader",
+                    "country": "France",
+                    "age": 33,
+                    "rating": 1.01,
+                    "headshot": "46%",
+                    "sens": 0.95,
+                    "DPI": 800,
+                    "image":"image/apex.webp"
+                },
+                
+                {
+                    "gamename": "flameZ",
+                    "fullname": "Shahar Shushan",
+                    "role": "Entry",
+                    "country": "Israel",
+                    "age": 23,
+                    "rating": 1.12,
+                    "headshot": "55%",
+                    "sens": 1.2,
+                    "DPI": 800,
+                    "image":"image/flamez.webp"
+                },
+        
+                {
+                    "gamename": "mezii",
+                    "fullname": "William Merriman",
+                    "role": "Rifler",
+                    "country": "United Kingdom",
+                    "age": 27,
+                    "rating": 1.04,
+                    "headshot": "49%",
+                    "sens": 1.45,
+                    "DPI": 400,
+                    "image":"image/mezii.webp"
+                },
+
+                {
+                    "gamename": "ropz",
+                    "fullname": "Robin Kool",
+                    "role": "Lurker",
+                    "country": "Estonia",
+                    "age": 26,
+                    "rating": 1.16,
+                    "headshot": "52%",
+                    "sens": 1.77,
+                    "DPI": 400,
+                    "image":"image/ropz.webp"
+                }
+            ]
+        },
+
+        {
+            "id": "mouz",
+            "name": "Team mouz",
+            "coach": "sycrone",
+            "founded": 2002,
+            "Win Rate": "67%",
+            "players": [
+                {
+                    "gamename": "torzsi",
+                    "fullname": "Ádám Torzsás",
+                    "role": "AWPer",
+                    "country": "Hungary",
+                    "age": 24,
+                    "rating": 1.14,
+                    "headshot": "31%",
+                    "sens": 1.7,
+                    "DPI": 400,
+                    "image":"image/torzsi.webp"
+                },
+        
+                {
+                    "gamename": "xertioN",
+                    "fullname": "Dorian Berman",
+                    "role": "Leader",
+                    "country": "Israel",
+                    "age": 22,
+                    "rating": 1.13,
+                    "headshot": "49%",
+                    "sens": 1.1,
+                    "DPI": 800,
+                    "image":"image/xertion.webp"
+                },
+        
+                {
+                    "gamename": "Spinx",
+                    "fullname": "Lotan Giladi",
+                    "role": "Lurker",
+                    "country": "Israel",
+                    "age": 25,
+                    "rating": 1.16,
+                    "headshot": "45%",
+                    "sens": 1.2,
+                    "DPI": 800,
+                    "image":"image/spinx.webp"
+                },
+        
+                {
+                    "gamename": "Brollan",
+                    "fullname": "Ludvig Brolin",
+                    "role": "Rifler",
+                    "country": "Sweden",
+                    "age": 24,
+                    "rating": 1.10,
+                    "headshot": "52%",
+                    "sens": 1.65,
+                    "DPI": 400,
+                    "image":"image/brollan.webp"
+                },
+        
+                {
+                    "gamename": "xelex",
+                    "fullname": "Xavier Silva",
+                    "role": "Entry",
+                    "country": "Portugal",
+                    "age": 20,
+                    "rating": 1.09,
+                    "headshot": "53%",
+                    "sens": 1.0,
+                    "DPI": 800,
+                    "image":"image/xelex.webp"
+                }
+            ]
+        },
+
+        {
+            "id": "9z",
+            "name": "Team 9z",
+            "coach": "BIT",
+            "founded": 2019,
+            "Win Rate": "60%",
+            "players": [
+                {
+                    "gamename": "max",
+                    "fullname": "Maximiliano Gonzalez",
+                    "role": "Leader",
+                    "country": "Uruguay",
+                    "age": 26,
+                    "rating": 1.02,
+                    "headshot": "44%",
+                    "sens": 1.8,
+                    "DPI": 400,
+                    "image":"image/max.webp"
+                },
+        
+                {
+                    "gamename": "dgt",
+                    "fullname": "Franco Garcia",
+                    "role": "Rifler",
+                    "country": "Uruguay",
+                    "age": 25,
+                    "rating": 1.14,
+                    "headshot": "50%",
+                    "sens": 1.5,
+                    "DPI": 400,
+                    "image":"image/dgt.webp"
+                },
+        
+                {
+                    "gamename": "HUASOPEEK",
+                    "fullname": "Nicolás Hernández",
+                    "role": "Entry",
+                    "country": "Chile",
+                    "age": 23,
+                    "rating": 1.07,
+                    "headshot": "51%",
+                    "sens": 1.1,
+                    "DPI": 800,
+                    "image":"image/huasopeek.webp"
+                },
+        
+                {
+                    "gamename": "meyern",
+                    "fullname": "Ignacio Meyer",
+                    "role": "Lurker",
+                    "country": "Argentina",
+                    "age": 23,
+                    "rating": 1.05,
+                    "headshot": "48%",
+                    "sens": 1.9,
+                    "DPI": 400,
+                    "image":"image/meyern.webp"
+                },
+        
+                {
+                    "gamename": "luchov",
+                    "fullname": "Luciano Herrera",
+                    "role": "AWPer",
+                    "country": "Argentina",
+                    "age": 22,
+                    "rating": 1.04,
+                    "headshot": "32%",
+                    "sens": 1.3,
+                    "DPI": 800,
+                    "image":"image/luchov.webp"
+                }
+            ]
+        }
+    ]
+}
+

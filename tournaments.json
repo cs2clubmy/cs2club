@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"name": "Esports World Cup 2026",
+		"event": "ESL World Championship",
+		"status": "live",
+		"date": "2026-08-14",
+		"prize": "$1,000,000",
+		"teams": ["Spirit", "Falcons", "MOUZ", "Vitality", "FURIA", "G2", "FaZe", "NAVI"],
+		"topMatch": "Spirit vs Falcons"
+	},
+	{
+		"id": 2,
+		"name": "ESL Challenger League S52 Europe",
+		"event": "ESL Challenger",
+		"status": "finished",
+		"date": "2026-08-14",
+		"prize": "$50,000",
+		"teams": ["OG", "BAKS", "BASEMENT BOYS", "Lavked"],
+		"topMatch": "BAKS vs OG"
+	},
+	{
+		"id": 3,
+		"name": "IEM Cologne Major 2026",
+		"event": "Intel Extreme Masters",
+		"status": "finished",
+		"date": "2026-07-21",
+		"prize": "$1,250,000",
+		"teams": ["Falcons", "FURIA", "Spirit", "Vitality"],
+		"topMatch": "Falcons vs FURIA"
+	},
+	{
+		"id": 4,
+		"name": "PGL Singapore Major 2026",
+		"event": "PGL Major",
+		"status": "upcoming",
+		"date": "2026-09-15",
+		"prize": "$1,500,000",
+		"teams": ["TBD", "TBD", "TBD", "TBD"],
+		"topMatch": "Qualifiers Ongoing"
+	},
+	{
+		"id": 5,
+		"name": "Blast.tv Austin Major 2025",
+		"event": "Blast Premier",
+		"status": "finished",
+		"date": "2025-06-10",
+		"prize": "$1,000,000",
+		"teams": ["Vitality", "The MongolZ", "FaZe", "MOUZ"],
+		"topMatch": "Vitality vs The MongolZ"
+	},
+	{
+		"id": 6,
+		"name": "Perfect World Shanghai Major 2024",
+		"event": "Perfect World",
+		"status": "finished",
+		"date": "2024-12-01",
+		"prize": "$1,250,000",
+		"teams": ["Spirit", "FaZe", "NAVI", "G2"],
+		"topMatch": "Spirit vs FaZe"
+	}
+]
