@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Response </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "responsehead-box">
+            <img id = "responsehead-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXtbn14aisvzyOuZAPNgeu2HU2IdGQaerV6fzJZ0UPQalKMZrt_QMudJDe_3GDQyj_CV0&s=10" alt="icon" style = "width: 64px; height: 64px;">
+            <span>CS2 Club</span>
+        </div>
+        <div class = "respondcontent">
+            <p>
+                Thanks For Registrating!
+            </p>
+            <br>
+            <p>
+                We Will Look Through Your Application and Make A Reply.
+            </p>
+            <br>
+            <hr class = "line">
+            <p>
+                <div class = "back">
+                <a href="index.html" id = "backmain">Back to Main Menu</a>
+                </div>
+            </p>
+        </div>
+        <script>
+            document.getElementById('backmain').addEventListener('click', () => {
+                const input = ['stu_nameinput', 'stu_idinput', 'stu_phoneinput', 'stu_emailinput', 'exp', 'reasoninput']; 
+                input.forEach(input => sessionStorage.removeItem(input));
+            });
+        </script>
+    </body>
+</html>
