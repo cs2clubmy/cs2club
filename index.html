@@ -18,6 +18,273 @@
 
 
 </head>
+	<style>
+		/* Hero Section */
+		.hero {
+			height: 90vh;
+			background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('gif/teamstop.gif');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 20px;
+		}
+		.hero h1 {
+			font-size: 5rem;
+			background: linear-gradient(to right, #FFD700, #f0a500, #FFD700);
+			background-size: 200% auto;
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+			animation: shimmer 3s linear infinite;
+			margin-bottom: 15px;
+		}
+		@keyframes shimmer {
+			to { background-position: 200% center; }
+		}
+		.hero p {
+			font-size: 1.4rem;
+			color: #CCD6F6;
+			max-width: 650px;
+			line-height: 1.8;
+		}
+		.hero .btn-group {
+			margin-top: 30px;
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.hero .btn-group a {
+			padding: 14px 40px;
+			border-radius: 30px;
+			text-decoration: none;
+			font-weight: bold;
+			font-family: 'Poppins', sans-serif;
+			transition: 0.3s;
+		}
+		.hero .btn-primary {
+			background: #FFD700;
+			color: #041c41;
+		}
+		.hero .btn-primary:hover {
+			background: #f0a500;
+			transform: scale(1.05);
+			box-shadow: 0 0 30px rgba(255,215,0,0.3);
+		}
+		.hero .btn-secondary {
+			border: 2px solid #FFD700;
+			color: #FFD700;
+		}
+		.hero .btn-secondary:hover {
+			background: #FFD700;
+			color: #041c41;
+			transform: scale(1.05);
+		}
+
+		/* Stats Bar */
+		.stats-bar {
+			display: flex;
+			justify-content: center;
+			gap: 60px;
+			padding: 40px 20px;
+			background: #0b1727;
+			border-top: 2px solid rgba(255,215,0,0.1);
+			border-bottom: 2px solid rgba(255,215,0,0.1);
+			flex-wrap: wrap;
+		}
+		.stats-bar .stat-item { text-align: center; }
+		.stats-bar .stat-item .number {
+			font-size: 2.5rem;
+			font-weight: bold;
+			color: #FFD700;
+		}
+		.stats-bar .stat-item .label {
+			color: #8892B0;
+			font-size: 0.95rem;
+			margin-top: 4px;
+		}
+
+		/* Section Title */
+		.section-title {
+			text-align: center;
+			padding: 50px 20px 10px;
+		}
+		.section-title h2 {
+			font-size: 2.5rem;
+			color: #FFD700;
+		}
+		.section-title p {
+			color: #8892B0;
+			max-width: 600px;
+			margin: 10px auto 0;
+		}
+
+		/* Featured Cards */
+		.featured-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			gap: 30px;
+			width: 88%;
+			margin: 30px auto 60px;
+		}
+		.feature-card {
+			background: #0b1727;
+			border-radius: 18px;
+			padding: 30px 25px;
+			text-align: center;
+			border: 1px solid rgba(255,215,0,0.08);
+			transition: 0.3s;
+			text-decoration: none;
+			color: #CCD6F6;
+		}
+		.feature-card:hover {
+			border-color: #FFD700;
+			transform: translateY(-8px);
+			box-shadow: 0 15px 40px rgba(255,215,0,0.08);
+		}
+		.feature-card .icon {
+			font-size: 3.5rem;
+			display: block;
+			margin-bottom: 12px;
+		}
+		.feature-card h3 {
+			color: #FFD700;
+			font-size: 1.3rem;
+			margin-bottom: 8px;
+		}
+		.feature-card p {
+			color: #8892B0;
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+
+		/* Live Match Banner */
+		.live-banner {
+			background: linear-gradient(135deg, #0b1727, #1a2a44);
+			border: 2px solid #ff4444;
+			border-radius: 18px;
+			padding: 25px 35px;
+			width: 88%;
+			max-width: 900px;
+			margin: 20px auto 50px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 15px;
+			animation: pulse-border 2s infinite;
+		}
+		@keyframes pulse-border {
+			0%, 100% { border-color: #ff4444; box-shadow: 0 0 20px rgba(255,68,68,0.1); }
+			50% { border-color: #ff8888; box-shadow: 0 0 40px rgba(255,68,68,0.2); }
+		}
+		.live-banner .live-tag {
+			background: #ff4444;
+			color: white;
+			padding: 6px 20px;
+			border-radius: 30px;
+			font-weight: bold;
+			font-size: 0.9rem;
+			animation: pulse-live 1.5s infinite;
+		}
+		@keyframes pulse-live {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.5; }
+		}
+		.live-banner .match-info {
+			color: #CCD6F6;
+			font-size: 1.1rem;
+			flex: 1;
+			text-align: center;
+		}
+		.live-banner .match-info strong { color: #FFD700; }
+		.live-banner .watch-btn {
+			background: #ff4444;
+			color: white;
+			padding: 10px 30px;
+			border-radius: 30px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		.live-banner .watch-btn:hover {
+			background: #cc0000;
+			transform: scale(1.05);
+		}
+
+		/* API Section */
+		.api-section {
+			background: #0b1727;
+			border-radius: 18px;
+			padding: 25px 30px;
+			border: 2px solid rgba(255,215,0,0.2);
+			margin: 30px auto 40px;
+			width: 88%;
+			max-width: 950px;
+		}
+		.api-section h3 {
+			color: #FFD700;
+			text-align: center;
+			margin-bottom: 15px;
+			font-size: 1.6rem;
+		}
+		.api-section .api-badge {
+			display: inline-block;
+			background: #FFD700;
+			color: #041c41;
+			font-size: 0.7rem;
+			padding: 2px 12px;
+			border-radius: 12px;
+			font-weight: bold;
+			margin-left: 10px;
+		}
+		.api-section .api-source {
+			text-align: center;
+			color: #8892B0;
+			font-size: 0.8rem;
+			margin-top: 15px;
+			padding-top: 12px;
+			border-top: 1px solid rgba(255,215,0,0.08);
+		}
+		.api-section .api-source a {
+			color: #FFD700;
+			text-decoration: none;
+		}
+		.api-loading {
+			color: #CCD6F6;
+			text-align: center;
+			padding: 20px;
+		}
+		.api-loading .spinner-sm {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			border: 3px solid rgba(255,215,0,0.2);
+			border-top: 3px solid #FFD700;
+			border-radius: 50%;
+			animation: spin 0.8s linear infinite;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+		@keyframes spin {
+			to { transform: rotate(360deg); }
+		}
+
+		/* Responsive */
+		@media screen and (max-width: 768px) {
+			.hero h1 { font-size: 2.8rem; }
+			.hero p { font-size: 1.1rem; }
+			.stats-bar { gap: 30px; }
+			.stats-bar .stat-item .number { font-size: 1.8rem; }
+			.featured-grid { width: 95%; grid-template-columns: 1fr; }
+			.live-banner { flex-direction: column; text-align: center; padding: 20px; }
+			.api-section { width: 95%; padding: 20px; }
+		}
+	</style>
 <body>
 
 	<!-- Navbar -->
