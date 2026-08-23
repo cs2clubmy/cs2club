@@ -25,7 +25,7 @@
         <h1 class="rankingHeader">CS2 World Ranking & Match Results</h1>
         <hr class="line">
         <div class="description-row">
-            <img src="image/cases.gif" class="casesgif">
+            <img src="gif/cases.gif" class="casesgif">
             <h4 class="rankingHeader">Live view of World Ranking & Matches result. Explore it and support your team
                 now!!</h4>
             <img src="image/cases.gif" class="casesgif">
@@ -157,14 +157,14 @@
 
     function buildTeamCard(team) {
         const changeText = team.points_diff > 0 ? `+${team.points_diff}` : team.points_diff;
-        const crownHTML = team.rank === 1 ? `<img src = "image/crown.gif" class="crown" alt="crown">` : '';
+        const crownHTML = team.rank === 1 ? `<img src = "gif/crown.gif" class="crown" alt="crown">` : '';
         const logoName = team.name.toLowerCase();
         const logoImg = `<img src = "image/${logoName}.png" alt="${team.name}" onerror="this.onerror=null; this.src='image/${logoName}.jpg';">`
         return `
             ${crownHTML}
             <div class = "team-hover-area">
                 <div class="logo-wrap">${logoImg}</div>
-                <img src = "image/ranktrophy.gif" class = "ranktrophy" alt="ranktrophy">
+                <img src = "gif/ranktrophy.gif" class = "ranktrophy" alt="ranktrophy">
                 <div>${team.rank}</div>
                 <div>${team.name}</div>
             </div>
