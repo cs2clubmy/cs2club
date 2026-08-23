@@ -453,7 +453,7 @@ html:has(.whole-player-page) {
 .top-gif{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("image/teamstop.gif");
+    url("gif/teamstop.gif");
     background-size: cover;
     background-position: center;
     display: flex;
